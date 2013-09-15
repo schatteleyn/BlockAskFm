@@ -1,0 +1,9 @@
+{
+"name" :"Block ask.fm",
+"version" :"1.0",
+"description" :"Hide the tweets containing an ask.fm link",
+"browser_action" :
+    {
+        "popup" :"popup.html"
+    }
+}
