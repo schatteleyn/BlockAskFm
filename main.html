@@ -1,4 +1,12 @@
 <script type="text/javascript" src="/getElementsByClassName.js"/>
 <script>
-
+	chrome.tabs.query({active: true, currentWindow: true}, function(arrayOfTabs) {
+		var activeTab = arrayOfTabs[0];
+		var listLinks = document.getElementsByClassName('js-display-url');
+		for (var i = listLinks.length - 1; i >= 0; i--) {
+			if(listLinks[i].innerHTML.indexOf("ask.fm/a/") != -1) {
+				// a.twitter-timeline-link < p.tweet-text < div.content < div.tweet < li.stream-item => display: none;	
+			}
+		}
+	});
 </script>
