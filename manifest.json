@@ -1,9 +1,12 @@
 {
+"manifest_version": 2,
 "name" :"Block ask.fm",
 "version" :"1.0",
 "description" :"Hide the tweets containing an ask.fm link",
-"browser_action" :
+"content_scripts": [
     {
-        "popup" :"popup.html"
+      "matches": ["http://www.twitter.com/*"],
+      "js": ["getElementsByClassName.js", "block.js"]
     }
+  ]
 }
